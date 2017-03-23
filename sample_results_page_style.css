@@ -2,5 +2,42 @@
 /* BODY */
 body {
     background-color: #ececec;
-    font-family: "Helvetica", "Arial", sans-serif;
+    font-family: Century Gothic, sans-serif;
 }
+
+/*Display table in center of page*/
+table {
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#title{
+  margin-left: 20%;
+  font-size: 24px;
+}
+
+#sortby{
+  margin-right: 10%;
+  text-align: right;
+}
+
+td {
+    padding-right: 30px;
+    padding-bottom: 30px;
+    align-items: center;
+    vertical-align: middle;
+    /*Size of "Park #"*/
+    font-size: 20px;
+}
+
+/*Start: Displays all images as the same size even if they are originally diff sizes*/
+.cell{
+  width: 250px;
+  height: 200px;
+  overflow: hidden;
+}
+.cell img{
+  height: 200px;
+  width: auto;
+}
+/*End*/
