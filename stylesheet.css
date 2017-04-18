@@ -4,7 +4,7 @@
 /* BODY */
 body {
     background-color: #ececec;
-    font-family: "Helvetica", "Arial", sans-serif;
+    font-family: "Segoe UI Light", "Helvetica", "Arial", sans-serif;
 }
 
 /* HEADER */
@@ -14,7 +14,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 8.75%;
+    height: 9.5%;
 }
 
 /* HEADER LOGO */
@@ -42,7 +42,7 @@ body {
 #navbar a {
     color: white;
     text-align: center;
-    padding: 21px 16px;
+    padding: 18px 16px;
     text-decoration: none;
     background-color: #383838;
 }
@@ -61,21 +61,70 @@ body {
     color: white;
     text-align: center;
 }
+/*BUTTONS!!!! i.e. in search page*/
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+}
+/*Start: Search Page*/
+#banner {
+    background:url('http://www.hotel-r.net/im/hotel/es/panorama-park-14.jpg') no-repeat;
+    background-size: 100%;
+    width:100%;
+    min-height:70px;
+    float: left;
+    padding-left: 0;
+    margin-left: 0;
+    margin-top: 0;
+}
 
-/*Display table in center of page*/
+.bannertitle {
+  text-align: center;
+  font-size: 75px;
+  color: white;
+}
+
+#geosearch {
+    background-color:
+}
+#searchcontent{
+  text-align: left;
+  margin-left: 20%;
+}
+#searchForm {
+  font-size: 20px;
+
+  width:  100%;
+}
+/*End: Search Page*/
+
+
+/*Start: Results Page
+Display table in center of page*/
 table {
     margin-left:auto;
     margin-right:auto;
 }
 
 #title{
-  margin-left: 20%;
-  font-size: 24px;
+  margin-left: 125px;
+  font-size: 30px;
+  line-height: 80%;
 }
 
 #sortby{
-  margin-right: 10%;
-  text-align: right;
+  margin-left: 125px;
+  font-size: 25px;
+  line-height: 75%;
+}
+.ParkDistance{
+    font-size: 15px;
 }
 
 td {
@@ -86,16 +135,29 @@ td {
     /*Size of "Park #"*/
     font-size: 20px;
 }
-
+/*End: Results Page */
 /*Start: Displays all images as the same size even if they are originally diff sizes*/
 .cell{
-  width: 250px;
+  width: 300px;
   height: 200px;
   overflow: hidden;
 }
 .cell img{
-  height: 200px;
+  height: 225px;
   width: auto;
 }
 
 /*End*/
+
+#itemBanner {
+  background: img = "streetsbeach.jpg" no-repeat;
+  background-size: 100%;
+  width:100%;
+  overflow: hidden;
+  min-height: 300px;
+  float: left;
+  padding-left: 0;
+  margin-left: 0;
+  margin-top: 0;
+
+}

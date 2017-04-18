@@ -4,7 +4,7 @@
 <!--
 	QUT Semester 1 2017
 	CAB 230 Project 1
-	
+
 	Myles Robinson      N9891838
 	Vanessa Gutierrez   N9890394
 	Luke Martin         N9452362
@@ -22,6 +22,7 @@
 
 	<!-- BODY -->
 	<body>
+	<br><br>
 	<!-- HEADER -->
 		<div id="header">
 			<a href="index.html">
@@ -29,22 +30,77 @@
 			</a>
 			<ul id="navbar">
 				<li><a href="index.html">Parks</a></li>
-  				<li><a href="search.html">Search</a></li>
- 				<li><a href="register.html">Register</a></li>
+					<li><a href="search.html">Search</a></li>
+				<li><a href="register.html">Register</a></li>
 			</ul>
 		</div>
-		
-		<!-- CONTENT -->
-		<div id="content">
-			<br><br><br>SEARCH
+
+		<div id="banner">
+			<p class = "bannertitle"> Find a park </p>
 		</div>
-		
+
+		<!-- CONTENT -->
+		<div id="searchcontent">
+
+			<form id = "searchForm">
+				<br><br><br><br><br><br><br><br><br><br>
+				<div id = "geosearch"><h4>Use my location to find parks near me </h4>
+				<button class = "button" onclick="getLocation()">Search Near Me</button></div>
+
+				<h4> - or - </h4>
+
+				<p id="searchPage"></p>
+
+				<script>
+					var x = document.getElementById("searchPage");
+
+					function getLocation() {
+			   		if (navigator.geolocation) {
+								/*Returns current position*/
+			       		navigator.geolocation.getCurrentPosition();
+			   		} else {
+			       		x.innerHTML = "Sorry, we're having trouble finding parks near you. Try allowing your web browser to access your location, or search by suburb instead.";
+			   		}
+					}
+
+				</script>
+				<h4>Use a custom search </h4>
+  			Park name:
+  			<input type="text" name="parkName"><br>
+				<br>
+
+				Suburb:
+				<select name="suburbs">
+  				<option value="CBD">City Business District</option>
+  				<option value="South Brisbane">South Brisbane</option>
+  				<option value="South Bank">South Bank</option>
+  				<option value="West End">West End</option>
+					<option value="Woolongabba">Woolongabba</option>
+				</select>
+				<br><br>
+
+				Rating: <br>
+  			<div style="padding-left: 15px">
+					  <input type="radio" name="rating" value="5up" checked> 5 stars & up<br>
+  			    <input type="radio" name="rating" value="4up"> 4 stars & up<br>
+  			    <input type="radio" name="rating" value="3up"> 3 stars & up<br>
+				    <input type="radio" name="rating" value="2up"> 2 stars & up<br>
+				    <input type="radio" name="rating" value="1up"> 1 star & up<br>
+				</div>
+			</form>
+
+
+			<br>
+			<a href = "results.html"><button class = "button" type="button">Search</button></a>
+
+		</div>
+
 		<br><br><br>
-	
+
 	<!-- FOOTER -->
 		<div id="footer">
 			CAB230 2017 Semester 1 Project
 		</div>
 	</body>
 
-</html>
+	</html>
