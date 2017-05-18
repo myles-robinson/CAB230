@@ -1,3 +1,4 @@
+
 <?php
 
     if (isset($_POST['submit'])) {
@@ -25,7 +26,7 @@
                 $password =  sha1($password . $salt);
 
                 // Create and prepare query
-                $query = "INSERT INTO users (firstname, lastname, email, password, salt)
+                $query = "INSERT INTO members (first_name, last_name, email, password, salt)
                 VALUES (:first_name, :last_name, :email, :password, :salt)";
 
                 // Prepare the statement to prevent SQL injections
@@ -45,12 +46,8 @@
                     // Get newly created account ID
                     $userId = $database->lastInsertId();
 
-                    $roleId = get_role("user");
-
-                    assign_user_role($userId, $roleId['id']);
-
                     // Redirect to index.php
-                    header("location: http://localhost/blog/index.php");
+                    header("location: http://localhost/Park-Findr/index.html");
                 }
             } else {
                 print_r($errors);
