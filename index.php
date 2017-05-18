@@ -19,20 +19,19 @@
 		<link rel="stylesheet" href="stylesheet.css" type="text/css">
 	</head>
 
-	<!-- HEADER -->
-	<?php require "./header.inc"; ?>
-
 	<!-- BODY -->
-	<body>
+	<body id="homePage">
+		<!-- HEADER -->
+		<?php require "./header.inc"; ?>
 
 		<!-- CONTENT -->
-		<div id="content">
-			<img src="graphics/bg.jpg" alt="Brisbane Map Background" id="indexBg">
-			<div id="search">
-				<input type="text" id="searchInput"><br>
-				<a href="results.html"><input type="button" onclick="" value="Search" id="searchButton"></a>
+		<br><br><br><br><br>
+			<div id="homePageContent">
+				<h2 style="text-align: center; font-size: 50px;"> Find your perfect park </h2>
+				<center><input type="text" id="searchInput"><br></center>
+				<center><a href="results.php"><input type="button" onclick="" value="Search" id="searchButton"></a></center>
 			</div>
-		</div>
+
 		<br><br><br>
 
 	<!-- FOOTER -->
