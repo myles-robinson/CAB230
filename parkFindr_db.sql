@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 17, 2017 at 07:15 AM
+-- Generation Time: May 18, 2017 at 03:57 AM
 -- Server version: 5.7.14
 -- PHP Version: 7.0.10
 
@@ -17,8 +17,18 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `parkFindr_db`
+-- Database: `parkfindr_db`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Stand-in structure for view `alphasuburb`
+-- (See below for the actual view)
+--
+CREATE TABLE `alphasuburb` (
+`Suburbs` varchar(50)
+);
 
 -- --------------------------------------------------------
 
@@ -34,6 +44,17 @@ CREATE TABLE `members` (
   `password` varchar(200) NOT NULL,
   `salt` varchar(200) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `members`
+--
+
+INSERT INTO `members` (`user_id`, `first_name`, `last_name`, `email`, `password`, `salt`) VALUES
+(1, 'Vanessa', 'Gutierrez', 'vguti9@gmail.com', '89e722b83efe2e077eb0d92d47e9c68fc0d0c08a', 'aad5b3f57b2f2a415289'),
+(2, 'Vanessa', 'Gutierrez', 'vguti9@gmail.com', '7a16157f52109c2916f5ac28219bb65a545073ef', '9a10fb96f4e2893433d1'),
+(3, 'Brendan', 'Geck', 'bgeck@gmail.com', '0933135d9a7f10a55553fa9bf72773f941912e94', '9a4269143ffb36b780dd'),
+(4, 'Vivian', 'Gutierrez', 'viviangq@gmail.com', '548d2bdcd8ba0f4e5b98a1511fc7ebe94b0bff79', 'd94ca6d906d0a87eee90'),
+(5, 'gtt', 'tt', 'hello@t.t', '8395ecbd88dfe52b9d114db5df51627d1252f97e', 'e433a21cf86f0db43f38');
 
 -- --------------------------------------------------------
 
@@ -2293,6 +2314,34 @@ CREATE TABLE `reviews` (
   `date` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
+-- --------------------------------------------------------
+
+--
+-- Stand-in structure for view `suburb list`
+-- (See below for the actual view)
+--
+CREATE TABLE `suburb list` (
+`Suburbs` varchar(50)
+);
+
+-- --------------------------------------------------------
+
+--
+-- Structure for view `alphasuburb`
+--
+DROP TABLE IF EXISTS `alphasuburb`;
+
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `alphasuburb`  AS  select `suburb list`.`Suburbs` AS `Suburbs` from `suburb list` order by `suburb list`.`Suburbs` ;
+
+-- --------------------------------------------------------
+
+--
+-- Structure for view `suburb list`
+--
+DROP TABLE IF EXISTS `suburb list`;
+
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `suburb list`  AS  select distinct `parks`.`Suburb` AS `Suburbs` from `parks` ;
+
 --
 -- Indexes for dumped tables
 --
@@ -2323,7 +2372,7 @@ ALTER TABLE `reviews`
 -- AUTO_INCREMENT for table `members`
 --
 ALTER TABLE `members`
-  MODIFY `user_id` int(6) NOT NULL AUTO_INCREMENT;
+  MODIFY `user_id` int(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 --
 -- AUTO_INCREMENT for table `parks`
 --
