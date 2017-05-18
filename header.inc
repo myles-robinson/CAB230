@@ -9,7 +9,7 @@
 ?>
 <!-- HEADER -->
   <div id="header">
-    <a href="index.html">
+    <a href="index.php">
       <img src="graphics/logo.png" id="logo" alt="ParkFindr Logo">
     </a>
     <ul id="navbar">
