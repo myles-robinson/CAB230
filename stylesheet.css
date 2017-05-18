@@ -8,6 +8,13 @@
     src: url(graphics/bodyFont.ttf);
 }
 
+html, body {
+  padding:0;
+  margin:0;
+  height: 100%;
+  width: 100%;
+}
+
 /* BODY */
 body {
     background-color: #ececec;
@@ -23,13 +30,11 @@ h1 {
 
 /* HEADER */
 #header {
-	background-color: #383838;
-	position: fixed;
+    background-color: #383838;
+  	position: fixed;
     top: 0;
-    left: 0;
     width: 100%;
     height: 50px;
-    z-index: 2;
 }
 
 /* HEADER LOGO */
@@ -48,6 +53,7 @@ h1 {
 #navbar ul {
 	list-style-type: none;
     overflow: hidden;
+
 }
 
 #navbar li {
@@ -240,34 +246,36 @@ td {
 }
 
 /* REGISTER PAGE */
-
-#registerInput {
+.registerHeading {
+  font-size: 36px;
+}
+.registerInput {
     color: #6ee06e;
     padding: 5px 10px;
     border-radius: 6px;
     border-style: none;
     font-size: 20px;
-    width: 30%;
+    width: 40%;
 }
 
-#registerInput:focus {
+.registerInput:focus {
 	outline: none;
 }
 
-#registerInputHalf {
+.registerInputHalf {
     color: #6ee06e;
     padding: 5px 10px;
     border-radius: 6px;
     border-style: none;
     font-size: 20px;
-    width: 14%;
+    width: 25%;
 }
 
-#registerInputHalf:focus {
+.registerInputHalf:focus {
 	outline: none;
 }
 
-#submitButton {
+.submitButton {
 	background-color: #6ee06e;
     border: none;
     border-radius: 6px;
@@ -278,7 +286,7 @@ td {
     font-size: 18px;
     display: block;
     margin: auto;
-    width: 10%;
+    width: 20%;
 }
 
 #submitButton:hover {
@@ -289,8 +297,19 @@ td {
 #submitButton:focus {
 	outline: none;
 }
+#formContainer {
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  position:relative;
 
-#registerContent {
+}
+
+.registerContent {
+  border: 1px solid;
+  width: 48%;
 	text-align: center;
 }
 
