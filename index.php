@@ -30,6 +30,7 @@
 				<h2 style="text-align: center; font-size: 50px;"> Find your perfect park </h2>
 				<center><input type="text" id="searchInput"><br></center>
 				<center><a href="results.php"><input type="button" onclick="" value="Search" id="searchButton"></a></center>
+				<h2 style="text-align: center; font-size: 30px;"> Brisbane, QLD </h2>
 			</div>
 
 		<br><br><br>
