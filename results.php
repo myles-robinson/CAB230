@@ -27,24 +27,25 @@
 
 		<!-- CONTENT -->
 		<div id="content">
-			<p id = "title"> Results for "South Bank" </p>
-			<p id = "sortby"> Sort by closest </p>
+			<br><br><br><br>
+			<p id = "title"> Results for "search" </p>
+			<!-- <p id = "sortby"> Sort by closest </p> -->
 
     		<table>
 				<tr>
-        		<td> <a href = "item.html"> <div class = "cell"> <img src = "graphics/southbank1.jpg"/> </div> <span class = "ParkName" ></a> South Bank Parklands </span> <span class = "ParkDistance"> <br> 1 km </br> </span></td>
-           	<td> <div class = "cell"> <img src = "graphics/southbank2.jpg"> </div>  <span class = "ParkName" > South Bank Parklands </span> <span class = "ParkDistance"> <br> 1.3 km </br> </span> </td>
-						<td> <div class = "cell"> <img src = "graphics/southbank3.jpg"> </div> <span class = "ParkName" > South Bank Parklands </span> <span class = "ParkDistance"> <br> 1.6 km </br> </span> </td>
+        		<td> <a href = "item.html"> <div class = "cell"> <img src = "graphics/southbank2.jpg"/> </div> <span class = "ParkName" ></a> Park </span> <span class = "ParkDistance"> <br> 0 km </br> </span></td>
+           	<td> <div class = "cell"> <img src = "graphics/southbank2.jpg"> </div>  <span class = "ParkName" > Park </span> <span class = "ParkDistance"> <br> 0 km </br> </span> </td>
+						<td> <div class = "cell"> <img src = "graphics/southbank2.jpg"> </div> <span class = "ParkName" > Park </span> <span class = "ParkDistance"> <br> 0 km </br> </span> </td>
         </tr>
 				<tr>
-						<td> <div class = "cell"> <img src = "graphics/southbank1.jpg"/> </div> <span class = "ParkName" > South Bank Parklands </span> <span class = "ParkDistance"> <br> 1.8 km </br> </span> </td>
-						<td> <div class = "cell"> <img src = "graphics/southbank2.jpg"> </div> <span class = "ParkName" > South Bank Parklands </span> <span class = "ParkDistance"> <br> 2 km </br> </span> </td>
-						<td> <div class = "cell"> <img src = "graphics/southbank3.jpg"> </div> <span class = "ParkName" > South Bank Parklands </span> <span class = "ParkDistance"> <br> 2.1 km </br> </span> </td>
+						<td> <div class = "cell"> <img src = "graphics/southbank2.jpg"/> </div> <span class = "ParkName" > Park </span> <span class = "ParkDistance"> <br> 0 km </br> </span> </td>
+						<td> <div class = "cell"> <img src = "graphics/southbank2.jpg"> </div> <span class = "ParkName" > Park </span> <span class = "ParkDistance"> <br> 0 km </br> </span> </td>
+						<td> <div class = "cell"> <img src = "graphics/southbank2.jpg"> </div> <span class = "ParkName" > Park </span> <span class = "ParkDistance"> <br> 0 km </br> </span> </td>
 				</tr>
 				<tr>
-						<td> <div class = "cell"> <img src = "graphics/southbank1.jpg"/> </div> <span class = "ParkName" > South Bank Parklands </span> <span class = "ParkDistance"> <br> 2.5 km </br> </span> </td>
-						<td> <div class = "cell"> <img src = "graphics/southbank2.jpg"> </div> <span class = "ParkName" > South Bank Parklands </span> <span class = "ParkDistance"> <br> 2.9 km </br> </span> </td>
-						<td> <div class = "cell"> <img src = "graphics/southbank3.jpg"> </div> <span class = "ParkName" > South Bank Parklands </span> <span class = "ParkDistance"> <br> 3.5 km </br> </span> </td>
+						<td> <div class = "cell"> <img src = "graphics/southbank2.jpg"/> </div> <span class = "ParkName" > Park </span> <span class = "ParkDistance"> <br> 0 km </br> </span> </td>
+						<td> <div class = "cell"> <img src = "graphics/southbank2.jpg"> </div> <span class = "ParkName" > Park </span> <span class = "ParkDistance"> <br> 0 km </br> </span> </td>
+						<td> <div class = "cell"> <img src = "graphics/southbank2.jpg"> </div> <span class = "ParkName" > Park </span> <span class = "ParkDistance"> <br> 0 km </br> </span> </td>
       	</tr>
       	</table>
 		</div>

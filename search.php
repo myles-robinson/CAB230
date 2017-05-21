@@ -21,6 +21,7 @@
 
 	<!-- HEADER -->
 	<?php require "./header.inc"; ?>
+	<?php require "./search.inc"; ?>
 
 	<!-- BODY -->
 	<body>
