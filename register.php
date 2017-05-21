@@ -17,48 +17,31 @@
 
 
 	<!-- BODY -->
-	<body>
+	<body style="background: #85f185;">
 		<?php require "./header.inc"; ?>
 		<?php require "./register.inc"; ?>
 		<!-- CONTENT -->
 
 		<div id="formContainer">
-		<!-- Login form -->
-		<div class="registerContent">
-			<form action="register.php" method="post">
-				<h2 class="registerHeading"><b>Already have a ParkFindr account? Log in here.</b></h2>
-				<br>
-        <input class="registerInput" id="registerInputHalf" type="email" name="email" placeholder="Email" onfocus="this.placeholder = ''" required/>
-				<br><br>
-				<input class="registerInput" type="password" class="registerInput" name="password" placeholder="Password" onfocus="this.placeholder = ''" required/>
-				<br><br>
-				<input class="submitButton" name="submit" type="submit" value="Submit" />
-			</form>
-		</div>
-		<br>
-		<div class="registerContent">
-			<!-- Registration Form -->
-			<form action ="register.php" method="post">
-				<h2 class="registerHeading"><b>Register an account with ParkFindr:</b></h2>
-				<br>
-				<input type="text" name="first_name" class="registerInputHalf" placeholder="First Name" onfocus="this.placeholder = ''" required />
-				<input type="text" name="last_name" class="registerInputHalf" placeholder="Last Name" required />
-				<br><br>
-				<input type="email" name="email" class="registerInput" placeholder="Email Address" required />
-				<br><br>
-				<input type="email" name="confirmemail" class="registerInput" placeholder="Confirm Email" required />
-				<br><br>
-				<input type="password" name="password" class="registerInputHalf" placeholder="Password" required />
-				<input type="password" name="confirmpw" class="registerInputHalf" placeholder="Confirm Password" required />
-				<br><br>
-				<input type="submit" name="submit" value="Submit" class="submitButton">
-			</form>
-		</div>
+			<img src="graphics/icon.png" alt="ParkFindr">
+			<div class="registerContent">
+				<!-- Registration Form -->
+				<form action ="register.php" method="post">
+					<h2 class="registerHeading"><b>Register for a ParkFindr account,<br> it's a walk in the park.</b></h2>
+					<br>
+					<input type="text" name="first_name" class="registerInput" placeholder="First Name" onfocus="this.placeholder = ''" required />
+					<br><br>
+					<input type="text" name="last_name" class="registerInput" placeholder="Last Name" required />
+					<br><br>
+					<input type="email" name="email" class="registerInput" placeholder="Email Address" required />
+					<br><br>
+					<input type="password" name="password" class="registerInput" placeholder="Password" required />
+					<br><br><br>
+					<input type="submit" name="submit" value="Register" class="submitButton">
+				</form>
+			</div>
 	</div>
-	<!-- FOOTER -->
-		<div id="footer">
-			CAB230 2017 Semester 1 Project
-		</div>
-	</body>
+  <?php require "./footer.inc"; ?>
+</body>
 
 </html>

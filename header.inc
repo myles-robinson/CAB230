@@ -14,7 +14,16 @@
     </a>
     <ul id="navbar">
       <li><a href="index.php">Parks</a></li>
-        <li><a href="search.php">Search</a></li>
-      <li><a href="register.php">Register/LogIn</a></li>
+      <li> | </li>
+      <li><a href="search.php">Search</a></li>
+      <li> | </li>
+      <?php if (!isset($_SESSION['loggedIn'])) { ?>
+      <li><a href="register.php">Register</a></li>
+      <li> | </li>
+      <li><a href="login.php">Log In</a></li>
+      <?php } else { ?>
+      <a href = "logout.php">Logout</a>
+      <?php } ?>
+      <li>  </li>
     </ul>
   </div>

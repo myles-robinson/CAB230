@@ -266,38 +266,25 @@ td {
     border-radius: 6px;
     border-style: none;
     font-size: 20px;
-    width: 40%;
+    min-width: 30%;
 }
 
 .registerInput:focus {
 	outline: none;
 }
 
-.registerInputHalf {
-    color: #6ee06e;
-    padding: 5px 10px;
-    border-radius: 6px;
-    border-style: none;
-    font-size: 20px;
-    width: 25%;
-}
-
-.registerInputHalf:focus {
-	outline: none;
-}
-
 .submitButton {
 	background-color: #6ee06e;
-    border: none;
-    border-radius: 6px;
-    color: white;
-    padding: 8px 16px;
-    text-decoration: none;
-    cursor: pointer;
-    font-size: 18px;
-    display: block;
-    margin: auto;
-    width: 20%;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 18px;
+  display: block;
+  margin: auto;
+  min-width: 20%;
 }
 
 #submitButton:hover {
@@ -308,24 +295,45 @@ td {
 #submitButton:focus {
 	outline: none;
 }
+
 #formContainer {
   max-width: 1000px;
   margin: 0 auto;
-  margin-top: 60px;
-  display: flex;
-  justify-content: space-between;
+  margin-top: 30px;
+
   position:relative;
+  background: #ececec;
+  height: 100%;
+  width: 100%;
+  box-shadow: 0 0 70px #8A759D;
+  text-align: center;
+  padding: 30px 20px;
+  box-sizing: border-box;
 
 }
 
 .registerContent {
-  border: 1px solid;
-  width: 48%;
-	text-align: center;
+
+
 }
 
 #itemPageBanner {
 	position: absolute;
 	z-index: 0;
     left: 0;
+}
+
+/* CODE CEMETARY */
+/*
+.registerInputHalf {
+    color: #6ee06e;
+    padding: 5px 10px;
+    border-radius: 6px;
+    border-style: none;
+    font-size: 20px;
+    width: 27%;
+}
+
+.registerInputHalf:focus {
+	outline: none;
 }

@@ -42,13 +42,7 @@
                 // Execute the query
                 $stmt->execute();
 
-                if ($stmt->rowCount() > 0) {
-                    // Get newly created account ID
-                    $userId = $database->lastInsertId();
-
-                    // Redirect to index.php
-                    header("location: http://localhost/Park-Findr/index.html");
-                }
+                header("location: ./index.php");
             } else {
                 print_r($errors);
             }
