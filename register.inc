@@ -42,7 +42,7 @@
                 // Execute the query
                 $stmt->execute();
 
-                header("location: ./index.php");
+                header("location: ./login.php");
             } else {
                 print_r($errors);
             }
