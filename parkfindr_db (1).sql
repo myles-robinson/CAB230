@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 18, 2017 at 03:57 AM
+-- Generation Time: May 22, 2017 at 09:32 AM
 -- Server version: 5.7.14
 -- PHP Version: 7.0.10
 
@@ -54,7 +54,16 @@ INSERT INTO `members` (`user_id`, `first_name`, `last_name`, `email`, `password`
 (2, 'Vanessa', 'Gutierrez', 'vguti9@gmail.com', '7a16157f52109c2916f5ac28219bb65a545073ef', '9a10fb96f4e2893433d1'),
 (3, 'Brendan', 'Geck', 'bgeck@gmail.com', '0933135d9a7f10a55553fa9bf72773f941912e94', '9a4269143ffb36b780dd'),
 (4, 'Vivian', 'Gutierrez', 'viviangq@gmail.com', '548d2bdcd8ba0f4e5b98a1511fc7ebe94b0bff79', 'd94ca6d906d0a87eee90'),
-(5, 'gtt', 'tt', 'hello@t.t', '8395ecbd88dfe52b9d114db5df51627d1252f97e', 'e433a21cf86f0db43f38');
+(5, 'gtt', 'tt', 'hello@t.t', '8395ecbd88dfe52b9d114db5df51627d1252f97e', 'e433a21cf86f0db43f38'),
+(6, 'vanessa', 'gutierrez', 'vguti9@gmail.com', '0ce206dbbd6757d86be1c1e26f470e459a1d3760', '199d7d41de41df9db0f5'),
+(7, 'vanessa', 'gutierrez', 'vguti9@gmail.com', '8f222faf6b60dddd77c98e160acfc68e9828b097', '120f253a651a20d86957'),
+(8, 'vanessa', 'gutierrez', 'vguti9@gmail.com', 'c0b70bf5104b5fb081aa3441eec37143ac22e1bc', '3dca19235fbf8de8c406'),
+(9, 'Vanessa', 'Gutierrez', 'vguti9@gmail.com', 'c75ef100015f34fdeebdb416083839057e7f23ce', '05d57366e1519d44b73f'),
+(10, 'Vanessa', 'Gutierrez', 'vguti9@gmail.com', 'b8c2985ed8168f2233f549d93cb78626757364b9', '872d3c5748656780938c'),
+(11, 'Vanessa', 'Gutierrez', 'vguti9@gmail.com', '2a875c12e65b9697c9d92b967dfe3dad5eb3f114', 'a3fe6c6a9f7a58574a6f'),
+(12, 'Rick', 'Morty', 'rick@morty.com', '175baabdfdf66807cd52ffe5f4e66396805d91b4', 'dcc5b68fb4c9b6505e94'),
+(13, 'test', 'test', 'test@test.com', '17f9ba77cbdffe21940811d7563dd245d2779fc8', 'e749038ef9c7af015379'),
+(14, 'marius', 'Imingen', 'megaloming@gmail.com', '8dbe7985b9e600493f618d7d062b4643f0a46003', '6fbb3aeaf4310ef50a0b');
 
 -- --------------------------------------------------------
 
@@ -2372,7 +2381,7 @@ ALTER TABLE `reviews`
 -- AUTO_INCREMENT for table `members`
 --
 ALTER TABLE `members`
-  MODIFY `user_id` int(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `user_id` int(6) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 --
 -- AUTO_INCREMENT for table `parks`
 --
