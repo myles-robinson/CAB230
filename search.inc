@@ -7,28 +7,41 @@
 
         try {
             //Create WHERE part of query
-            $Where = "WHERE parks.id = reviews.park_id ";
+            $Where = "WHERE ";
 
             //If filter value entered, collect value and add to WHERE statement
             if($_POST['Rating'] != 'ANY'){
               $Rating = $_POST['Rating'];
-              $Where .= "AND reviews.Rating >= :Rating ";
+              if($Where != 'WHERE '){
+                $Where .= "AND ";
+              }
+              $Where .= "parks.id = reviews.park_id AND reviews.Rating >= :Rating ";
             }
             if($_POST['Suburb'] != 'ALL'){
               $Suburb = $_POST['Suburb'];
-              $Where .= "AND parks.Suburb = :Suburb ";
+              if($Where != 'WHERE '){
+                $Where .= "AND ";
+              }
+              $Where .= "parks.Suburb = :Suburb ";
             }
             if ($_POST['Name'] != ''){
-              $Name = "'%";
+              $Name = "%";
               $Name .= $_POST['Name'];
-              $Name .= "%'";
-              $Where .= "AND parks.Name LIKE :Name ";
+              $Name .= "%";
+              if($Where != 'WHERE '){
+                $Where .= "AND ";
+              }
+              $Where .= " parks.Name LIKE :Name ";
             }
 
             // Create query with WHERE statement
-            $query = "SELECT DISTINCT * FROM parks,reviews ";
-            $query .= $Where;
-
+            $query = "SELECT DISTINCT * FROM parks ";
+            if($_POST['Rating'] != 'ANY'){
+              $query .= ",reviews ";
+            }
+            if($Where != 'WHERE '){
+              $query .= $Where;
+            }
             // Prepare the statement to prevent SQL injections
             $stmt = $database->prepare($query);
 
