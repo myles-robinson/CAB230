@@ -107,7 +107,7 @@ h1 {
     margin-left: 0;
     margin-top: 0;
     position: absolute;
-	z-index: 0;
+	z-index: 1;
     left: 0;
 }
 
@@ -122,11 +122,11 @@ h1 {
 }
 #searchcontent{
   text-align: left;
-  margin-left: 20%;
+  margin-left: 20
+  margin-right:
 }
 #searchForm {
   font-size: 20px;
-
   width:  100%;
 }
 /*End: Search Page*/
@@ -134,7 +134,11 @@ h1 {
 
 /*Start: Results Page
 Display table in center of page*/
-table {
+#searchResults{
+  font-size: 100px;
+  margin-left: 20%;
+}
+/*table {
     margin-left:auto;
     margin-right:auto;
 }
@@ -161,7 +165,7 @@ td {
     vertical-align: middle;
     /*Size of "Park #"*/
     font-size: 20px;
-}
+}*/
 /*End: Results Page */
 /*Start: Displays all images as the same size even if they are originally diff sizes*/
 .cell{
@@ -260,6 +264,7 @@ td {
 .registerHeading {
   font-size: 36px;
 }
+
 .registerInput {
     color: #6ee06e;
     padding: 5px 10px;
@@ -298,6 +303,7 @@ td {
 
 #formContainer {
   max-width: 1000px;
+  min-height: min-content;
   margin: 0 auto;
   margin-top: 50px;
 

@@ -5,6 +5,7 @@
       global $database;
 
       try{
+        // Collect input values
         $email = $_POST['email'];
         $password = $_POST['password'];
         $query = "SELECT salt FROM members WHERE email = :email";

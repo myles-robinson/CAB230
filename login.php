@@ -29,7 +29,7 @@
   			<form action="login.php" method="post">
   				<h2 class="registerHeading"><b>Already have a ParkFindr account?<br> Log in here.</b></h2>
   				<br>
-          <input class="registerInput" id="registerInputHalf" type="email" name="email" placeholder="Email" onfocus="this.placeholder = ''" required/>
+          <input class="registerInput" type="email" name="email" placeholder="Email" onfocus="this.placeholder = ''" required/>
   				<br><br>
   				<input class="registerInput" type="password" class="registerInput" name="password" placeholder="Password" onfocus="this.placeholder = ''" required/>
   				<br><br><br>

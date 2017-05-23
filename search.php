@@ -24,22 +24,21 @@
 	<?php require "./search.inc"; ?>
 
 	<!-- BODY -->
-	<body>
+	<body style="background: #85f185;">
 		<br><br>
 		<div id="banner">
 			<h1 class = "bannertitle">Find a park</h1>
 		</div>
 
 		<!-- CONTENT -->
-		<div id="searchcontent">
-
-			<form id = "searchForm">
-				<br><br><br><br><br><br><br><br>
+		<div id="formContainer">
+			<form id="searchForm" action="search.php" method="post">
+				<br><br><br><br>
+				<h2> @Myles - need to add geosearch functionality </h2>
 				<div id = "geosearch"><h4>Use my location to find parks near me </h4>
-				<button class = "button" onclick="getLocation()">Search Near Me</button></div>
+				<button class="submitButton" onclick="getLocation()">Search Near Me</button></div>
 
-				<h4> - or - </h4>
-
+<!--
 				<p id="searchPage"></p>
 
 				<script>
@@ -54,14 +53,19 @@
 			   		}
 					}
 
-				</script>
-				<h4>Use a custom search </h4>
+				</script> -->
+
+
+				<h4> - or - </h4>
+
+				<h4>Use a custom search - THIS IS WORKING! :D </h4>
   			Park name:
-  			<input type="text" name="parkName"><br>
+  			<input type="text" name="Name" class="registerInput"><br>
 				<br>
 
 				Suburb:
-				<select name="suburbs">
+				<select name="Suburb" class="registerInput">
+					<option value="ALL">ALL</option>
 					<option value="ACACIA RIDGE">ACACIA RIDGE</option>
 					<option value="ALBION">ALBION</option>
 					<option value="ALDERLEY">ALDERLEY</option>
@@ -253,26 +257,23 @@
 
 				Rating: <br>
   			<div style="padding-left: 15px">
-					  <input type="radio" name="rating" value="5up" checked> 5 stars & up<br>
-  			    <input type="radio" name="rating" value="4up"> 4 stars & up<br>
-  			    <input type="radio" name="rating" value="3up"> 3 stars & up<br>
-				    <input type="radio" name="rating" value="2up"> 2 stars & up<br>
-				    <input type="radio" name="rating" value="1up"> 1 star & up<br>
+						<input type="radio" name="Rating" value="ANY" checked> Any Rating<br>
+					  <input type="radio" name="Rating" value=5> 5 stars & up<br>
+  			    <input type="radio" name="Rating" value=4> 4 stars & up<br>
+  			    <input type="radio" name="Rating" value=3> 3 stars & up<br>
+				    <input type="radio" name="Rating" value=2> 2 stars & up<br>
+				    <input type="radio" name="Rating" value=1> 1 star & up<br>
 				</div>
+				<br>
+				<input class="submitButton" name="submit" type="submit" value="Search" />
 			</form>
-
-
-			<br>
-			<a href = "results.php"><button class = "button" type="button">Search</button></a>
 
 		</div>
 
 		<br><br><br>
 
 	<!-- FOOTER -->
-		<div id="footer">
-			CAB230 2017 Semester 1 Project
-		</div>
+		<?php require "./footer.inc"; ?>
 	</body>
 
 	</html>
