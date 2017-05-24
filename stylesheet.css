@@ -149,9 +149,11 @@ Display table in center of page*/
 
 #resultsList a {
     text-decoration: none;
+    color: black;
 }
 
 #resultsList a:visited {
+  text-decoration: none;
     color: black;
 }
 

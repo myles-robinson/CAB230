@@ -39,9 +39,10 @@
 					echo "<h2>Hmm, we couldn't find any parks to fit your search. </h2>", "<h2><a href = \"search.php\"> Try again! </a></h2>";
 				} else {
 					foreach ($_SESSION['results'] as &$searchResult) {
-						//NEED TO BE ABLE TO SAVE $searchResult -- the info of the park clicked on -- to send/use to generate item.php
+						//Dispay each result as a link, the url of which contains the park name to be passed
+						//to the itemPage contained in a variable named 'park'.
 						echo "<p><li>
-										<a href = \"item.php\">", $searchResult['Name'] ,"</a>
+										<a href = \"item.php?park=" . $searchResult['Name'] . "\">", $searchResult['Name'] ,"</a>
 									</li></p>";
 									?>
 				<?php } }?>
