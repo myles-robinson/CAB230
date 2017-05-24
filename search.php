@@ -25,18 +25,18 @@
 
 	<!-- BODY -->
 	<body style="background: #85f185;">
-		<br><br>
+		<!--
 		<div id="banner">
-			<h1 class = "bannertitle">Find a park</h1>
 		</div>
+		-->
 
 		<!-- CONTENT -->
 		<div id="formContainer">
 			<form id="searchForm" action="search.php" method="post">
-				<br><br><br><br>
-				<h2> @Myles - need to add geosearch functionality </h2>
-				<div id = "geosearch"><h4>Use my location to find parks near me </h4>
-				<button class="submitButton" onclick="getLocation()">Search Near Me</button></div>
+				<div id = "geosearch">
+					<img src="graphics/searchIcon.png" alt="ParkFindr" style="height: 100px; width: 100px;">
+					<p class="searchTitle"><b>Use my location to find parks near me</b></p>
+					<button class="submitButton" onclick="getLocation()">Search Near Me</button></div>
 
 <!--
 				<p id="searchPage"></p>
@@ -55,10 +55,7 @@
 
 				</script> -->
 
-
-				<h4> - or - </h4>
-
-				<h4>Use a custom search - THIS IS WORKING! :D </h4>
+				<br><br><p class="searchTitle"><b>Use a custom search</b></p>
   			Park name:
   			<input type="text" name="Name" class="registerInput"><br>
 				<br>
@@ -264,13 +261,10 @@
 				    <input type="radio" name="Rating" value=2> 2 stars & up<br>
 				    <input type="radio" name="Rating" value=1> 1 star & up<br>
 				</div>
-				<br>
-				<input class="submitButton" name="submit" type="submit" value="Search" />
+				<br><input class="submitButton" name="submit" type="submit" value="Search" /><br>
 			</form>
 
 		</div>
-
-		<br><br><br>
 
 	<!-- FOOTER -->
 		<?php require "./footer.inc"; ?>

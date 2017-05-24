@@ -1,3 +1,5 @@
+/* -------------------------------------------------------------------------- */
+
 @font-face {
     font-family: headingsFont;
     src: url(graphics/headingsFont.ttf);
@@ -15,6 +17,8 @@ html, body {
   width: 100%;
 }
 
+/* -------------------------------------------------------------------------- */
+
 /* BODY */
 body {
     background-color: #ececec;
@@ -24,9 +28,11 @@ body {
 h1 {
 	font-family: "headingsFont", "Segoe UI Light", "Helvetica", "Arial", sans-serif;
 	text-align: center;
-  	font-size: 75px;
-  	color: white;
+  font-size: 75px;
+  color: white;
 }
+
+/* -------------------------------------------------------------------------- */
 
 /* HEADER */
 #header {
@@ -73,6 +79,8 @@ h1 {
     color: #6ee06e;
 }
 
+/* -------------------------------------------------------------------------- */
+
 /* FOOTER */
 #footer {
 	position: fixed;
@@ -85,6 +93,8 @@ h1 {
     text-align: center;
 }
 
+/* -------------------------------------------------------------------------- */
+
 /*BUTTONS!!!! i.e. in search page*/
 .button {
     background-color: #4CAF50; /* Green */
@@ -96,25 +106,13 @@ h1 {
     display: inline-block;
     font-size: 15px;
 }
-/*Start: Search Page*/
-#banner {
-    background:url('http://www.hotel-r.net/im/hotel/es/panorama-park-14.jpg') no-repeat;
-    background-size: 100%;
-    width:100%;
-    min-height:70px;
-    float: left;
-    padding-left: 0;
-    margin-left: 0;
-    margin-top: 0;
-    position: absolute;
-	z-index: 1;
-    left: 0;
-}
 
-.bannertitle {
-  text-align: center;
-  font-size: 75px;
-  color: white;
+/* -------------------------------------------------------------------------- */
+
+/*Start: Search Page*/
+
+.searchTitle {
+  font-size: 36px;
 }
 
 #geosearch {
@@ -131,22 +129,43 @@ h1 {
 }
 /*End: Search Page*/
 
+/* -------------------------------------------------------------------------- */
 
 /*Start: Results Page
 Display table in center of page*/
-#searchResults{
-  font-size: 100px;
-  margin-left: 20%;
+
+#resultsTitle {
+  margin-left: 2.5%
 }
+
+#resultsDiv {
+  font-size: 18px;
+  margin-left: 5%;
+}
+
+#resultsList {
+    list-style-type: none;
+}
+
+#resultsList a {
+    text-decoration: none;
+}
+
+#resultsList a:visited {
+    color: black;
+}
+
+#resultsList a:hover {
+    color: #bfbfbf;
+}
+
+.resultItem {
+
+}
+
 /*table {
     margin-left:auto;
     margin-right:auto;
-}
-
-#title{
-  margin-left: 125px;
-  font-size: 30px;
-  line-height: 80%;
 }
 
 #sortby{
@@ -167,6 +186,9 @@ td {
     font-size: 20px;
 }*/
 /*End: Results Page */
+
+/* -------------------------------------------------------------------------- */
+
 /*Start: Displays all images as the same size even if they are originally diff sizes*/
 .cell{
   width: 300px;
@@ -179,6 +201,8 @@ td {
 }
 
 /*End*/
+
+/* -------------------------------------------------------------------------- */
 
 #itemBanner {
   background: img = "streetsbeach.jpg" no-repeat;
@@ -193,6 +217,8 @@ td {
 
 }
 
+/* -------------------------------------------------------------------------- */
+
 /* INDEX BG */
 /*NEED TO FIX BACKGROUND TO SHOW UNDER NAVBAR*/
 #indexBg {
@@ -202,7 +228,6 @@ td {
 	z-index: 0;
 	left: 0;
 }
-
 
 /*HOME PAGE*/
 #homePage {
@@ -259,6 +284,8 @@ td {
 #searchButton:focus {
 	outline: none;
 }
+
+/* -------------------------------------------------------------------------- */
 
 /* REGISTER PAGE */
 .registerHeading {
@@ -328,6 +355,8 @@ td {
     left: 0;
 }
 
+/* -------------------------------------------------------------------------- */
+
 /* CODE CEMETARY */
 /*
 .registerInputHalf {
@@ -341,4 +370,18 @@ td {
 
 .registerInputHalf:focus {
 	outline: none;
+}
+
+#banner {
+    background:url('http://www.hotel-r.net/im/hotel/es/panorama-park-14.jpg') no-repeat;
+    background-size: 100%;
+    width:100%;
+    min-height:70px;
+    float: left;
+    padding-left: 0;
+    margin-left: 0;
+    margin-top: 0;
+    position: absolute;
+	z-index: 1;
+    left: 0;
 }
