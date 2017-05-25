@@ -115,14 +115,6 @@ h1 {
   font-size: 36px;
 }
 
-#geosearch {
-    background-color:
-}
-#searchcontent{
-  text-align: left;
-  margin-left: 20
-  margin-right:
-}
 #searchForm {
   font-size: 20px;
   width:  100%;
@@ -165,30 +157,6 @@ Display table in center of page*/
 
 }
 
-/*table {
-    margin-left:auto;
-    margin-right:auto;
-}
-
-#sortby{
-  margin-left: 125px;
-  font-size: 25px;
-  line-height: 75%;
-}
-.ParkDistance{
-    font-size: 15px;
-}
-
-td {
-    padding-right: 30px;
-    padding-bottom: 30px;
-    align-items: center;
-    vertical-align: middle;
-    /*Size of "Park #"*/
-    font-size: 20px;
-}*/
-/*End: Results Page */
-
 /* -------------------------------------------------------------------------- */
 
 /*Start: Displays all images as the same size even if they are originally diff sizes*/
@@ -207,7 +175,6 @@ td {
 /* -------------------------------------------------------------------------- */
 
 #itemBanner {
-  background: img = "streetsbeach.jpg" no-repeat;
   background-size: 100%;
   width:100%;
   overflow: hidden;
@@ -358,32 +325,3 @@ td {
 }
 
 /* -------------------------------------------------------------------------- */
-
-/* CODE CEMETARY */
-/*
-.registerInputHalf {
-    color: #6ee06e;
-    padding: 5px 10px;
-    border-radius: 6px;
-    border-style: none;
-    font-size: 20px;
-    width: 27%;
-}
-
-.registerInputHalf:focus {
-	outline: none;
-}
-
-#banner {
-    background:url('http://www.hotel-r.net/im/hotel/es/panorama-park-14.jpg') no-repeat;
-    background-size: 100%;
-    width:100%;
-    min-height:70px;
-    float: left;
-    padding-left: 0;
-    margin-left: 0;
-    margin-top: 0;
-    position: absolute;
-	z-index: 1;
-    left: 0;
-}

@@ -19,7 +19,7 @@
 		<link rel="stylesheet" href="stylesheet.css" type="text/css">
 	</head>
 	<!-- HEADER -->
-	<?php require "./header.inc"; ?>
+	<?php require "./includes/header.inc"; ?>
 
 
 	<!-- BODY -->
@@ -27,10 +27,6 @@
 
 		<br><br><br>
 		<h2 id = "resultsTitle">Search Results </h2>
-
-		<!--
-		 <br><b> @BOTH: FIGURE OUT WHO WORKS ON THIS PAGE FIRST TO AVOID GIT CONFLICTS <br>@MYLES: ADD MAP WITH ALL RESULTS <br>@LUKE: THIS PAGE NEEDS TO BE PRETTYFIED & INFO FROM SELECTED PARK SAVED FOR ITEM PAGE!</b></h2>
-		-->
 
 		<div id="resultsDiv">
 			<ul id="resultsList">
@@ -52,7 +48,7 @@
 		<br><br><br>
 
 	<!-- FOOTER -->
-	<?php require "./footer.inc"; ?>
+	<?php require "./includes/footer.inc"; ?>
 
 	</body>
 

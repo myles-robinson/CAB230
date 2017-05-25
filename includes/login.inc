@@ -26,7 +26,7 @@
           $_SESSION['loggedIn'] = true;
           $_SESSION['user_id'] = $stmt->fetch()['user_id'];
           $_SESSION['user_first_name'] = $stmt->fetch()['first_name'];
-          header("location: ./index.php");
+          header("location: ../parkfindr/index.php");
 
         }
         else{

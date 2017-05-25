@@ -20,40 +20,19 @@
 	<link rel="stylesheet" href="stylesheet.css" type="text/css">
 
 	<!-- HEADER -->
-	<?php require "./header.inc"; ?>
-	<?php require "./search.inc"; ?>
+	<?php require "./includes/header.inc"; ?>
+	<?php require "./includes/search.inc"; ?>
 
 	<!-- BODY -->
 	<body style="background: #85f185;">
-		<!--
-		<div id="banner">
-		</div>
-		-->
 
 		<!-- CONTENT -->
 		<div id="formContainer">
 			<form id="searchForm" action="search.php" method="post">
 				<div id = "geosearch">
-					<img src="graphics/searchIcon.png" alt="ParkFindr" style="height: 100px; width: 100px;">
+					<img src="graphics/searchIcon.png" alt="Search Icon" style="height: 100px; width: 100px;">
 					<p class="searchTitle"><b>Use my location to find parks near me</b></p>
 					<button class="submitButton" onclick="getLocation()">Search Near Me</button></div>
-
-<!--
-				<p id="searchPage"></p>
-
-				<script>
-					var x = document.getElementById("searchPage");
-
-					function getLocation() {
-			   		if (navigator.geolocation) {
-								/*Returns current position*/
-			       		navigator.geolocation.getCurrentPosition();
-			   		} else {
-			       		x.innerHTML = "Sorry, we're having trouble finding parks near you. Try allowing your web browser to access your location, or search by suburb instead.";
-			   		}
-					}
-
-				</script> -->
 
 				<br><br><p class="searchTitle"><b>Use a custom search</b></p>
   			Park name:
@@ -267,7 +246,7 @@
 		</div>
 
 	<!-- FOOTER -->
-		<?php require "./footer.inc"; ?>
+		<?php require "./includes/footer.inc"; ?>
 	</body>
 
 	</html>

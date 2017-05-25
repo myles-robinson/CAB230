@@ -22,7 +22,7 @@
 	<!-- BODY -->
 	<body id="homePage">
 		<!-- HEADER -->
-		<?php require "./header.inc"; ?>
+		<?php require "./includes/header.inc"; ?>
 
 		<!-- CONTENT -->
 		<br><br><br><br><br>
@@ -35,6 +35,6 @@
 
 		<br><br><br>
 
-		<?php require "./footer.inc"; ?>
+		<?php require "./includes/footer.inc"; ?>
 	</body>
 </html>

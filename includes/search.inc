@@ -67,7 +67,7 @@
               $_SESSION['results'] = "NONE";
             }
             //GO TO results page
-            header("location: ./results.php");
+            header("location: ../parkfindr/results.php");
 
         } catch (PDOException $e) {
             die($e->getMessage());

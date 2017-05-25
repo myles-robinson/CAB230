@@ -18,18 +18,18 @@
 
 	<!-- BODY -->
 	<body style="background: #85f185;">
-		<?php require "./header.inc"; ?>
-		<?php require "./login.inc"; ?>
+		<?php require "./includes/header.inc"; ?>
+		<?php require "./includes/login.inc"; ?>
 		<!-- CONTENT -->
 
 		<div id="formContainer">
-      <img src="graphics/icon.png" alt="ParkFindr">
+      <img src="graphics/icon.png" alt="Park Finder Logo">
   		<!-- Login form -->
   		<div class="registerContent">
   			<form action="login.php" method="post">
   				<h2 class="registerHeading"><b>Already have a ParkFindr account?<br> Log in here.</b></h2>
   				<br>
-          <input class="registerInput" type="email" name="email" placeholder="Email" onfocus="this.placeholder = ''" required/>
+          <input class="registerInput" type="email" name="email" placeholder="Email" onfocus="this.placeholder = ''" value="<?php if(isset($_POST['email'])) echo $_POST['email']?>" required/>
   				<br><br>
   				<input class="registerInput" type="password" class="registerInput" name="password" placeholder="Password" onfocus="this.placeholder = ''" required/>
   				<br><br><br>
@@ -38,6 +38,6 @@
       </div>
     </div>
 
-    <?php require "./footer.inc"; ?>
+    <?php require "./includes/footer.inc"; ?>
   </body>
 </html>

@@ -6,6 +6,7 @@ function error_messages(&$errors, $message) {
     array_push($errors, $message);
 }
 
+//Verifies input does not contain numbers or symbols
 function char_only($str, $message) {
     global $errors;
     if (!preg_match('/^[a-zA-Z ]*$/', $str)) {
