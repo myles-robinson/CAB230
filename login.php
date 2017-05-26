@@ -23,7 +23,7 @@
 		<!-- CONTENT -->
 
 		<div id="formContainer">
-      <img src="./graphics/icon.png" alt="Park Finder Logo">
+      <!-- <img src="./graphics/icon.png" alt="Park Finder Logo"> -->
   		<!-- Login form -->
   		<div class="registerContent">
   			<form action="login.php" method="post">

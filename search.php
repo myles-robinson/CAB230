@@ -30,12 +30,12 @@
 		<div id="formContainer">
 			<form id="searchForm" action="search.php" method="post">
 				<div id = "geosearch">
-					<img src="./graphics/searchIcon.png" alt="Search Icon" style="height: 100px; width: 100px;">
+					<!-- <img src="./graphics/searchIcon.png" alt="Search Icon" style="height: 100px; width: 100px;"> -->
 					<p class="searchTitle"><b>Use my location to find parks near me</b></p>
-					<button class="submitButton" onclick="getLocation()">Search Near Me</button></div>
-
-				<br><br><p class="searchTitle"><b>Use a custom search</b></p>
-  			Park name:
+					<button class="submitButton" onclick="getLocation()">Search Near Me</button>
+				</div>
+				<br><p class="searchTitle"><b>Or, use a custom search</b></p>
+  			Park Name:
   			<input type="text" name="Name" class="registerInput"><br>
 				<br>
 
