@@ -24,7 +24,7 @@
 	<?php require "./includes/search.inc"; ?>
 
 	<!-- BODY -->
-	<body style="background: #85f185;">
+	<body class="bodyBg">
 
 		<!-- CONTENT -->
 		<div id="formContainer">

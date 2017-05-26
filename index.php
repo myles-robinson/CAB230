@@ -20,7 +20,7 @@
 	</head>
 
 	<!-- BODY -->
-	<body id="homePage">
+	<body class="bodyBg">
 		<!-- HEADER -->
 		<?php require "./includes/header.inc"; ?>
 

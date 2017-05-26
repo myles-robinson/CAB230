@@ -17,7 +17,7 @@
 
 
 	<!-- BODY -->
-	<body style="background: #85f185;">
+	<body class="bodyBg">
 		<?php require "./includes/header.inc"; ?>
 		<?php require "./includes/register.inc"; ?>
 		<!-- CONTENT -->
