@@ -15,7 +15,7 @@
 	<!-- HEAD -->
 	<head>
 		<title>ParkFindr</title>
-		<link rel="icon" href="graphics/icon.png" type="text/css">
+		<link rel="icon" href="./graphics/icon.png" type="text/css">
 		<link rel="stylesheet" href="stylesheet.css" type="text/css">
 	</head>
 	<!-- HEADER -->

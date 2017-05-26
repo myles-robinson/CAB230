@@ -2,12 +2,12 @@
 
 @font-face {
     font-family: headingsFont;
-    src: url(graphics/headingsFont.ttf);
+    src: url('graphics/headingsFont.ttf');
 }
 
 @font-face {
     font-family: bodyFont;
-    src: url(graphics/bodyFont.ttf);
+    src: url('graphics/bodyFont.ttf');
 }
 
 html, body {
@@ -200,7 +200,7 @@ Display table in center of page*/
 
 /*HOME PAGE*/
 #homePage {
-    background-image: url("graphics/bg2.png");
+    background-image: url('graphics/bg2.png');
     background-repeat: no-repeat;
     background-position: right top;
     background-attachment: fixed;

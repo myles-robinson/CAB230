@@ -11,7 +11,7 @@
 	<!-- HEAD -->
 	<head>
 		<title>ParkFindr</title>
-		<link rel="icon" href="graphics/icon.png" type="text/css">
+		<link rel="icon" href="./graphics/icon.png" type="text/css">
 		<link rel="stylesheet" href="stylesheet.css" type="text/css">
 	</head>
 
@@ -23,7 +23,7 @@
 		<!-- CONTENT -->
 
 		<div id="formContainer">
-			<img src="graphics/icon.png" alt="Park Finder Logo">
+			<img src="./graphics/icon.png" alt="Park Finder Logo">
 			<div class="registerContent">
 				<!-- Registration Form -->
 				<form action ="register.php" method="post">

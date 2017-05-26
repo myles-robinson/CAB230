@@ -16,7 +16,7 @@
 	<head>
 		<title>ParkFindr</title>
 	</head>
-	<link rel="icon" href="graphics/icon.png" type="text/css">
+	<link rel="icon" href="./graphics/icon.png" type="text/css">
 	<link rel="stylesheet" href="stylesheet.css" type="text/css">
 
 	<!-- HEADER -->
@@ -30,7 +30,7 @@
 		<div id="formContainer">
 			<form id="searchForm" action="search.php" method="post">
 				<div id = "geosearch">
-					<img src="graphics/searchIcon.png" alt="Search Icon" style="height: 100px; width: 100px;">
+					<img src="./graphics/searchIcon.png" alt="Search Icon" style="height: 100px; width: 100px;">
 					<p class="searchTitle"><b>Use my location to find parks near me</b></p>
 					<button class="submitButton" onclick="getLocation()">Search Near Me</button></div>
 

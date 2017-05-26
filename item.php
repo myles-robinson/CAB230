@@ -16,7 +16,7 @@
 	<head>
 		<title>ParkFindr</title>
 		<meta>
-		<link rel="icon" href="graphics/icon.png" type="text/css">
+		<link rel="icon" href="./graphics/icon.png" type="text/css">
 		<link rel="stylesheet" href="stylesheet.css" type="text/css">
 		<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 		</meta>
@@ -32,7 +32,7 @@
 		<br><br>
 		<?php echo"<p style = 'text-align: center; font-size: 36px;'> " . $_GET['park'] . " </p>" ?>
 
-    <center><img src="graphics/parklands map.png" alt="parklands map" width="45%"></center>
+    <center><img src="./graphics/parklands map.png" alt="parklands map" width="45%"></center>
 
 		<br><br>
 		<div class="container">
