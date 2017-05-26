@@ -234,15 +234,16 @@ Display table in center of page*/
 
 #searchButton {
 	width: 10%;
+  min-width: 100px;
 	background-color: #6ee06e;
-    border: none;
-    border-radius: 6px;
-    color: white;
-    padding: 8px 16px;
-    text-decoration: none;
-    margin-left: auto;
-    cursor: pointer;
-    font-size: 20px;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  margin-left: auto;
+  cursor: pointer;
+  font-size: 20px;
 }
 
 #searchButton:hover {
