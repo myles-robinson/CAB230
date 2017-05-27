@@ -57,7 +57,7 @@
 							echo "<h3>" . $review[3] . "</h3>";
 							echo "<p> by User " . $review[1] . " on " . $review[5] . "</p>"; ?>
 						</div><br>
-				<?php }
+				<?php }}
 				if (isset($_SESSION['loggedIn'])) {
 					if ($_SESSION['loggedIn']) { ?>
 						<div id="leaveReview">
@@ -79,9 +79,9 @@
 					</div>
 				<?php } }
 				else {
-					echo "<h3><a href=\"../parkfindr/login.php\">Log in</a> to leave a review </h3>";
+					echo "<h3><a href=\"../parkfindr/login.php\">Log in</a> to leave a review.</h3>";
 				}
-				} ?>
+				 ?>
 			</div>
 		</div>
 
