@@ -153,9 +153,6 @@ Display table in center of page*/
     color: #bfbfbf;
 }
 
-.resultItem {
-
-}
 
 /* -------------------------------------------------------------------------- */
 
@@ -186,6 +183,19 @@ Display table in center of page*/
 
 }
 
+#singleReview{
+  background-color: rgb(215, 229, 196);
+  padding: 5px 10px;
+  border-radius: 6px;
+  border-style: none;
+  word-wrap: break-word;
+}
+#leaveReview{
+  background-color: rgb(209, 233, 233);
+  padding: 5px 10px;
+  border-radius: 6px;
+  border-style: none;
+}
 /* -------------------------------------------------------------------------- */
 
 .bodyBg {
@@ -315,6 +325,21 @@ Display table in center of page*/
 
 }
 
+#container{
+  max-width: 1000px;
+  min-height: min-content;
+  margin: 0 auto;
+  margin-top: 50px;
+
+  position:relative;
+  background: #ececec;
+  height: 100%;
+  width: 100%;
+  box-shadow: 0 0 70px #383838;
+  padding: 30px 20px;
+  box-sizing: border-box;
+}
+
 .registerContent {
 
 }
@@ -324,5 +349,12 @@ Display table in center of page*/
 	z-index: 0;
     left: 0;
 }
-
+#textInput{
+  color: #6ee06e;
+  padding: 5px 10px;
+  border-radius: 6px;
+  border-style: none;
+  font-size: 20px;
+  min-width: 30%;
+}
 /* -------------------------------------------------------------------------- */
