@@ -68,7 +68,7 @@
 		</div>
 
 		<br>
-		<div id="resultsDiv">
+		<div id="resultsDiv" itemscope itemtype="http://schema.org/Park">
 			<ul id="resultsList">
 				<!-- Print the park name of parks from search results -->
 				<?php if ($_SESSION['results'] == 'NONE') {

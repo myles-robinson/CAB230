@@ -199,17 +199,10 @@ Display table in center of page*/
 
 
 #map {
-  height: 350px;
+  height: 50%;
   width: 70%;
   margin: auto;
  }
-
- #cmap {
-   height: 60%;
-   width: 70%;
-   margin: 0;
-   padding: 0;
-  }
 
 /* -------------------------------------------------------------------------- */
 

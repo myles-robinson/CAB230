@@ -16,9 +16,9 @@
 	<head>
 		<title>ParkFindr</title>
 		<meta>
-		<link rel="icon" href="./graphics/icon.png" type="text/css">
-		<link rel="stylesheet" href="stylesheet.css" type="text/css">
-		<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+			<link rel="icon" href="./graphics/icon.png" type="text/css">
+			<link rel="stylesheet" href="stylesheet.css" type="text/css">
+			<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 		</meta>
 	</head>
 
@@ -62,8 +62,7 @@
 		<br>
 
 		<!-- REVIEWS -->
-		<div>
-			<br>
+		<div itemscope itemtype="http://schema.org/Review">
       <div class="col-xs-12"><h2 style="text-align: center; font-weight: bold">Park Reviews:</div>
 			<div style = "margin-left: auto; margin-right: auto; width: 60%">
 				<?php
@@ -80,7 +79,7 @@
 				<?php }}
 				if (isset($_SESSION['loggedIn'])) {
 					if ($_SESSION['loggedIn']) { ?>
-						<div id="leaveReview">
+						<div id="leaveReview" itemscope itemtype="http://schema.org/reviewRating" itemprop="itemReviewed">
 						<h2> Have you been to this park? Write a review! </h2>
 						<form id="searchForm" action="" method="post">
 							How many stars would you rate this park? <br><br>

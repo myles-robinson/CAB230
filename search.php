@@ -29,7 +29,7 @@
 		<!-- CONTENT -->
 		<div id="formContainer">
 			<form id="searchForm" action="search.php" method="post">
-				<div id = "geosearch">
+				<div id = "geosearch" itemscope itemtype="http://schema.org/Park">
 					<!-- <img src="./graphics/searchIcon.png" alt="Search Icon" style="height: 100px; width: 100px;"> -->
 					<p class="searchTitle"><b>Use my location to find parks near me</b></p>
 					<button class="submitButton" onclick="getLocation()">Search Near Me</button>
@@ -40,7 +40,7 @@
 				<br>
 
 				Suburb:
-				<select name="Suburb" class="registerInput">
+				<select name="Suburb" class="registerInput" itemprop="name">
 					<option value="ALL">ALL</option>
 					<option value="ACACIA RIDGE">ACACIA RIDGE</option>
 					<option value="ALBION">ALBION</option>
