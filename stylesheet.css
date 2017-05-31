@@ -196,6 +196,21 @@ Display table in center of page*/
   border-radius: 6px;
   border-style: none;
 }
+
+
+#map {
+  height: 350px;
+  width: 70%;
+  margin: auto;
+ }
+
+ #cmap {
+   height: 60%;
+   width: 70%;
+   margin: 0;
+   padding: 0;
+  }
+
 /* -------------------------------------------------------------------------- */
 
 .bodyBg {

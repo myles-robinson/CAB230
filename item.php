@@ -36,10 +36,28 @@
 		<?php echo"<h3 style = 'text-align: center; font-size: 20px;'> " . $_SESSION['street'][0] . ", BRISBANE</h3>" ?>
 		<!--show street name -->
 
-		<!-- MAP -->
-    <center><img src="./graphics/parklands map.png" alt="parklands map" width="45%"></center>
-
-		<br><br>
+		<br>
+		 <div id="map">
+			 <?php
+				 echo "<script>
+					 function initMap() {
+						 var nest = {lat: " . $_GET['lat'] . ",lng: " . $_GET['lon'] . "};
+						 var map = new google.maps.Map(document.getElementById('map'), {
+							 zoom: 14,
+							 center: nest
+						 });
+						 var marker = new google.maps.Marker({
+							 position: nest,
+							 map: map
+						 });
+					 }
+				 </script>
+				 <script async defer
+					src='https://maps.googleapis.com/maps/api/js?key=AIzaSyAAWvUmj_1u-YvOzsblzpz_JqQ10t1yWEA&callback=initMap'>
+				 </script>"
+			 ?>
+		 </div>
+		<br>
 
 		<!-- REVIEWS -->
 		<div>
@@ -83,7 +101,8 @@
 				}
 				 ?>
 			</div>
-		</div>
+
+
 
 		<br><br><br>
 
