@@ -26,44 +26,53 @@
 
 	<!-- BODY -->
 	<body>
-<br><br><br><br><br>
-		<div id="map"></div>
-		<?php
-		echo "
-		<script type='text/javascript'>
-		var locations =[
-		foreach($_SESSION['results'] as $value) {
-		[<?php echo $_value['lat'] . $_value['lon'] ?>]		<?php}  ?>
-		]
-	];
 
-    var map = new google.maps.Map(document.getElementById('map'), {
-      zoom: 10,
-      center: new google.maps.LatLng(-27.4698, 153.0251),
-      mapTypeId: google.maps.MapTypeId.ROADMAP
-    });
-
-    var marker, i;
-
-    for (i = 0; i < locations.length; i++) {
-      marker = new google.maps.Marker({
-        position: new google.maps.LatLng(locations[i][0], locations[i][1]),
-        map: map
-      });
-
-    }
-  </script>
-	    	"
-				?>
+		<!--
+		'. "{lat: "' . $value['lat'] . '",lng: "' . $value['lon'] . '"}"'
+		-->
 
 		<br><br><br>
 		<h2 id = "resultsTitle">Search Results </h2>
 
+		<br>
+		<div id="map">
+			<?php
+				echo "
+					<script type='text/javascript'>
+						var locations =[{}
+				";
+
+				foreach ($_SESSION['results'] as $value) {
+					echo "
+						,{lat: " . $value[7] . ", lng: " . $value[8] . "}
+					";
+				}
+
+				echo "
+					];
+						var map = new google.maps.Map(document.getElementById('map'), {
+							zoom: 10,
+			      	center: new google.maps.LatLng(-27.4698, 153.0251),
+			      	mapTypeId: google.maps.MapTypeId.ROADMAP
+			    	});
+
+			    	for (i = 0; i < locations.length; i++) {
+							var marker = new google.maps.Marker({
+	 							position: locations[i],
+	 							map: map
+	 						});
+			    	}
+		  		</script>
+				";
+		 	?>
+		</div>
+
+		<br>
 		<div id="resultsDiv">
 			<ul id="resultsList">
 				<!-- Print the park name of parks from search results -->
 				<?php if ($_SESSION['results'] == 'NONE') {
-					echo "<h2>Hmm, we couldn't find any parks to fit your search. </h2>", "<h2><a href = \"search.php\"> Try again! </a></h2>";
+					echo "<h2>Hmm, we couldn't find any parks to fit your search. <a href = \"search.php\"> Try again! </a></h2>";
 				} else {
 					foreach ($_SESSION['results'] as &$searchResult) {
 						//Dispay each result as a link, the url of which contains the park name to be passed

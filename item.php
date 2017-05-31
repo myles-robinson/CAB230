@@ -42,10 +42,12 @@
 				 echo "<script>
 					 function initMap() {
 						 var nest = {lat: " . $_GET['lat'] . ",lng: " . $_GET['lon'] . "};
+
 						 var map = new google.maps.Map(document.getElementById('map'), {
 							 zoom: 14,
 							 center: nest
 						 });
+
 						 var marker = new google.maps.Marker({
 							 position: nest,
 							 map: map
